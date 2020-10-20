@@ -4,6 +4,16 @@ var gamePattern = [];
 var userClickedPattern = [];
 var count = 0;
 
+$(document).ready(function(){
+    var a = $(window).width();
+    if (a < 500){
+        console.log('Mobile device');
+        prompt();
+    }
+    else{
+        console.log('Not a Mobile device');
+    }
+});
 
 function nextSequence(){
     count+=1;
